@@ -1,0 +1,35 @@
+﻿<Window x:Class="ClickWars2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClickWars2"
+        xmlns:views="clr-namespace:ClickWars2.View"
+        mc:Ignorable="d"
+        Title="ClickWars" Height="400" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <views:NewGameView Grid.Row="0" 
+                           Grid.Column="0"
+                           DataContext="{Binding GamesViewModel}"/>
+        
+        <views:HighScoresGamesView Grid.Row="1"
+                                   Grid.Column="0"
+                                   DataContext="{Binding GamesViewModel}"/>
+        
+        <views:PlayGameView Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.RowSpan="2"
+                            DataContext="{Binding GamesViewModel}"/>
+
+    </Grid>
+</Window>
