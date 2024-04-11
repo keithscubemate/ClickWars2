@@ -2,6 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <SolidColorBrush x:Key="MainBackGroundBrush" Color="#43434F"/>
     <SolidColorBrush x:Key="LighterMainBackGroundBrush" Color="#53535F"/>
-    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#555F40"/>
-    <SolidColorBrush x:Key="TextBlockForeGroundBrush" Color="Azure"/>
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#FF9A4A11"/>
+    <SolidColorBrush x:Key="TextBlockForeGroundBrush" Color="#FFE6D5A8"/>
 </ResourceDictionary>
