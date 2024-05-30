@@ -15,8 +15,8 @@ namespace ClickWars2.ViewModel
         private static readonly Comparison<GameItemViewModel> GameComp =
             (g1, g2) => (int)g2.Score - (int)g1.Score;
 
-        public bool NotGaming => this._activeGameItemViewModel is null;
         public bool Gaming => this._activeGameItemViewModel is not null;
+        public bool NotGaming => !this.Gaming;
         public string NewGamePlayerName
         {
             get => this._newGamePlayerName;
